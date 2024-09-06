@@ -1,4 +1,4 @@
-const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
+const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY || 'YOUR_API_KEY_HERE';
 
 async function fetchClaudeResponse(prompt) {
     try {
