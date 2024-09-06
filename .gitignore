@@ -1,0 +1,13 @@
+# Ignore environment variables file
+.env
+
+# Ignore node_modules if you're using npm
+node_modules/
+
+# Ignore any logs
+*.log
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore any other sensitive or environment-specific files

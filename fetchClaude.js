@@ -1,4 +1,4 @@
-const CLAUDE_API_KEY = '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';
+const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
 
 async function fetchClaudeResponse(prompt) {
     try {
