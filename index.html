@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcherr - Digital Identity Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <h1>Matcherr</h1>
+            <nav class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#dashboard" class="pure-menu-link">Dashboard</a></li>
+                    <li class="pure-menu-item"><a href="#profile" class="pure-menu-link">Profile</a></li>
+                    <li class="pure-menu-item"><a href="#explore" class="pure-menu-link">Explore</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="pure-g">
+            <div class="pure-u-1-4">
+                <section id="profile" class="card">
+                    <h2>Profile</h2>
+                    <div id="userProfile"></div>
+                </section>
+            </div>
+            
+            <div class="pure-u-1-4">
+                <section id="dashboard" class="card">
+                    <h2>Dashboard</h2>
+                    <div class="widget">
+                        <h3>Total Connections</h3>
+                        <p id="totalConnections">0</p>
+                    </div>
+                    <div class="widget">
+                        <h3>Upcoming Events</h3>
+                        <ul id="upcomingEvents"></ul>
+                    </div>
+                    <div class="widget">
+                        <h3>Recent Interactions</h3>
+                        <ul id="recentInteractions"></ul>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="pure-u-1-4">
+                <section id="businessList" class="card">
+                    <h2>Businesses</h2>
+                </section>
+            </div>
+            
+            <div class="pure-u-1-4">
+                <section id="eventList" class="card">
+                    <h2>Events</h2>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="fetchClaude.js"></script>
+</body>
+</html>

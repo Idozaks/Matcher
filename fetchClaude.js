@@ -1,0 +1,33 @@
+const CLAUDE_API_KEY = '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';
+
+async function fetchClaudeResponse(prompt) {
+    try {
+        const response = await fetch('https://api.anthropic.com/v1/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-API-Key': CLAUDE_API_KEY
+            },
+            body: JSON.stringify({
+                prompt: prompt,
+                model: 'claude-v1',
+                max_tokens_to_sample: 300
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch response from Claude API');
+        }
+
+        const data = await response.json();
+        return data.completion;
+    } catch (error) {
+        console.error('Error fetching Claude response:', error);
+        return 'Sorry, I encountered an error while processing your request.';
+    }
+}
+
+// Example usage:
+// fetchClaudeResponse("Tell me more about TechCorp").then(response => {
+//     console.log(response);
+// });
