@@ -41,7 +41,9 @@
                     </div>
                     <div class="widget">
                         <h3>Recent Interactions</h3>
-                        <ul id="recentInteractions"></ul>
+                        <div id="recentInteractionsContainer">
+                            <ul id="recentInteractions"></ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -70,4 +72,6 @@
     <script src="app.js"></script>
     <script src="fetchClaude.js"></script>
 </body>
+<!-- Add this just before the closing </body> tag -->
+<div id="toastContainer"></div>
 </html>
