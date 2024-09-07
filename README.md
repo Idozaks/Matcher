@@ -1,4 +1,4 @@
-Since you're unable to run scripts using **React** or **Node.js** on your Windows system, we can create **Matcherr** using a solution that relies purely on **HTML**, **CSS**, and **JavaScript**, ensuring the application remains lightweight, frontend-based, and easy to run directly in the browser without needing any server-side scripting.
+hSince you're unable to run scripts using **React** or **Node.js** on your Windows system, we can create **Matcherr** using a solution that relies purely on **HTML**, **CSS**, and **JavaScript**, ensuring the application remains lightweight, frontend-based, and easy to run directly in the browser without needing any server-side scripting.
 
 Here’s an updated **Cursor Composer** prompt that uses **Vanilla JavaScript**, **HTML**, and **CSS**, and incorporates artificial data and **Claude API** for the AI-powered interactions, while making it easy to run without complex installations or environments.
 
